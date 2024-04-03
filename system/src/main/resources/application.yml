@@ -1,0 +1,65 @@
+server:
+  port: 8001
+
+spring:
+  application:
+    name: short-link-system
+  mvc:
+    path match:
+      matching-strategy: ANT_PATH_MATCHER
+    view:
+      prefix: /templates/
+      suffix: .html
+  datasource:
+    driver-class-name: org.apache.shardingsphere.driver.ShardingSphereDriver
+    url: jdbc:shardingsphere:classpath:shardingsphere-config-${database.env:dev}.yml
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
+  redis:
+    host: localhost
+    port: 6379
+    timeout: 5000
+
+  rabbitmq:
+    addresses: localhost
+    port: 5672
+    password: guest
+    username: guest
+    listener:
+      direct:
+        acknowledge-mode: manual
+        retry:
+          enabled: true
+          max-attempts: 5
+          initial-interval: 5000
+          multiplier: 1.5
+          max-interval: 60000
+
+short-link:
+  domain:
+    default: localhost:8001
+  stats:
+    locale:
+      amap-key: 824c511f0997586ea016f979fdb23087
+  goto-domain:
+    white-list:
+      enable: true
+      names: 'ddd'
+      details:
+        - zhihu.com
+        - juejin.cn
+        - cnblogs.com
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath:mapper/*.xml
+
+# Swagger配置
+knife4j:
+  # 是否开启swagger
+  enabled: true
+

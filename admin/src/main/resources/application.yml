@@ -1,0 +1,34 @@
+server:
+  port: 8002
+
+spring:
+  mvc:
+    path match:
+      matching-strategy: ANT_PATH_MATCHER
+  application:
+    name: short-link-admin
+  datasource:
+    driver-class-name: org.apache.shardingsphere.driver.ShardingSphereDriver
+    url: jdbc:shardingsphere:classpath:shardingsphere-config-dev.yml
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    timeout: 5000
+
+short-link:
+  group:
+    max-num: 20
+  flow-limit:
+    enable: true
+    time-window: 1
+    max-access-count: 20
+
+# Swagger配置
+knife4j:
+  # 是否开启swagger
+  enabled: true
+
