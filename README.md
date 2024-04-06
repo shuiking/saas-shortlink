@@ -21,7 +21,8 @@ saas-shortlink
 | nacos | 服务注册和发现 |
 | mysql | 数据库 |
 ## 系统架构图
-![image](https://github.com/shuiking/saas-shortlink/assets/86963048/2a5bdaa1-dc90-4c1e-9517-2986337d3804)
+![320044904-2a5bdaa1-dc90-4c1e-9517-2986337d3804](https://github.com/shuiking/saas-shortlink/assets/86963048/f1232079-f7ed-4b38-a242-570836b7d6aa)
+
 
 
 ## 代码运行相关截图
