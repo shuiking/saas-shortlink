@@ -26,3 +26,10 @@ saas-shortlink
 
 
 ## 代码运行相关截图
+![image](https://github.com/shuiking/saas-shortlink/assets/86963048/c1bd9071-4a7a-4352-864a-b95838186e08)
+![image](https://github.com/shuiking/saas-shortlink/assets/86963048/3c7985f4-8987-48ba-8dfd-eccdd926b612)
+![image](https://github.com/shuiking/saas-shortlink/assets/86963048/7e2ecf4e-260f-4812-9cee-e4de65f0739f)
+![image](https://github.com/shuiking/saas-shortlink/assets/86963048/063a7006-7cc1-48cd-ae96-c949f383b884)
+![image](https://github.com/shuiking/saas-shortlink/assets/86963048/b2224d07-8f50-49aa-8493-ccbae194fba6)
+![image](https://github.com/shuiking/saas-shortlink/assets/86963048/3e9ac3d0-1621-40ce-94e1-7afab031d966)
+
